@@ -1,0 +1,455 @@
+@font-face {
+  font-family: "GothamHTF-Bold";
+  src: url("//db.onlinewebfonts.com/t/a05b8eca8c7460cfd711deddc20e2603.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GothamHTF-Book";
+  src: url("//db.onlinewebfonts.com/t/1af7207b68ef04bc4e453e0aa814e986.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: GothamHTF-Bold;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.banner-container .hero-banner__big {
+  position: relative;
+}
+
+.banner-container .hero-banner__big .hero-banner__title {
+  position: absolute;
+  font-size: 70px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -90%);
+  letter-spacing: 7.5px;
+}
+
+.banner-container .hero-banner__big .hero-banner__subtitle {
+  position: absolute;
+  top: 168px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-container .hero-banner__big .hero-banner__subtitle a {
+  text-decoration: none;
+  line-height: 36px;
+  font-family: GothamHTF-Book;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.banner-container .hero-banner__small {
+  display: flex;
+}
+
+.banner-container .hero-banner__small-item {
+  width: 100%;
+  position: relative;
+}
+
+.banner-container .hero-banner__small-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-container .hero-banner__small-item .hero-banner__title {
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -90%);
+  transform: translate(-50%, -50%);
+}
+
+.banner-container .hero-banner__small-item .hero-banner__title p {
+  font-size: 25px;
+}
+
+.banner-container .note {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: GothamHTF-Book;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-container__item img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.footer__content {
+  margin-top: 45px;
+}
+
+.footer__content .footer__content-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content .footer__content-main .footer__subscribe-title {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__content .footer__content-main .footer__subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer__content .footer__content-main .footer__subscribe-input {
+  padding: 13px 10px;
+  border-radius: 0;
+  border: 1px solid #161616;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+
+.footer__content .footer__content-main .footer__subscribe .btn {
+  display: inline-block;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #000000;
+  border: 1px solid transparent;
+  padding: 8px 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.footer__content .footer__content-main .footer__socials {
+  display: flex;
+  margin-top: 30px;
+}
+
+.footer__content .footer__content-main .footer__socials i {
+  margin: 0 15px;
+  font-size: 28px;
+}
+
+.footer__content-care .customer-care h3 {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.footer__content-care .customer-care .footer__list {
+  list-style: none;
+}
+
+.footer__content-care .customer-care .footer__list .footer__link {
+  font-size: 12px;
+  color: #232323;
+  font-family: GothamHTF-Book;
+  margin-bottom: 10px;
+}
+
+.footer__content .footer__menu-fast {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__content .footer__menu-fast a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #000000;
+  padding: 0 12px;
+  border-right: 2px solid #a3a3a3;
+  font-family: GothamHTF-Book;
+}
+
+@media screen and (min-width: 320px) {
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-container .hero-banner__big .hero-banner__title {
+    position: absolute;
+    font-size: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1.5px;
+  }
+  .banner-container .hero-banner__big .hero-banner__subtitle {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-container .hero-banner__big .hero-banner__subtitle a {
+    text-decoration: none;
+    line-height: 12px;
+    font-family: GothamHTF-Book;
+    font-size: 8px;
+    color: #000000;
+    font-weight: 500;
+  }
+  .banner-container .hero-banner__small-item .hero-banner__title {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -90%);
+    transform: translate(-50%, -50%);
+  }
+  .banner-container .hero-banner__small-item .hero-banner__title p {
+    font-size: 10px;
+  }
+  .banner-container .note {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: GothamHTF-Book;
+    font-weight: normal;
+    margin: 10px 0;
+  }
+  .blog-container__list {
+    display: flex;
+    align-items: stretch;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .blog-container__list .blog-container__item {
+    width: 50%;
+  }
+  .footer__content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer__content .footer__subscribe {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .footer__content .footer__subscribe-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .footer__content .customer-care {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+  .footer__content .footer__menu-fast {
+    margin: 20px 25px;
+    list-style: none;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-container .hero-banner__big .hero-banner__title {
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1.5px;
+  }
+  .banner-container .hero-banner__big .hero-banner__subtitle {
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-container .hero-banner__big .hero-banner__subtitle a {
+    text-decoration: none;
+    line-height: 25px;
+    font-family: GothamHTF-Book;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 500;
+  }
+  .banner-container .hero-banner__small-item .hero-banner__title {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -90%);
+    transform: translate(-50%, -50%);
+  }
+  .banner-container .hero-banner__small-item .hero-banner__title p {
+    font-size: 20px;
+  }
+  .banner-container .note {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: GothamHTF-Book;
+    font-weight: normal;
+    margin: 10px 0;
+  }
+  .blog-container__list .blog-container__item {
+    width: 33.33%;
+  }
+  .footer__content-main {
+    flex-direction: row;
+  }
+  .footer__content-main .footer__subscribe {
+    width: 60%;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .footer__content-main .footer__subscribe-title {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-container .hero-banner__big .hero-banner__title {
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2.5px;
+  }
+  .banner-container .hero-banner__big .hero-banner__subtitle {
+    position: absolute;
+    top: 55px;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-container .hero-banner__big .hero-banner__subtitle a {
+    text-decoration: none;
+    line-height: 25px;
+    font-family: GothamHTF-Book;
+    font-size: 12px;
+    color: #000000;
+    font-weight: 500;
+  }
+  .banner-container .hero-banner__small-item .hero-banner__title {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -90%);
+    transform: translate(-50%, -50%);
+  }
+  .banner-container .hero-banner__small-item .hero-banner__title p {
+    font-size: 25px;
+  }
+  .banner-container .note {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: GothamHTF-Book;
+    font-weight: normal;
+    margin: 10px 0;
+  }
+  .blog-container__list .blog-container__item {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .banner-container .hero-banner__big {
+    position: relative;
+  }
+  .banner-container .hero-banner__big .hero-banner__title {
+    position: absolute;
+    font-size: 70px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -90%);
+    letter-spacing: 7.5px;
+  }
+  .banner-container .hero-banner__big .hero-banner__subtitle {
+    position: absolute;
+    top: 168px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-container .hero-banner__big .hero-banner__subtitle a {
+    text-decoration: none;
+    line-height: 36px;
+    font-family: GothamHTF-Book;
+    font-size: 14px;
+    color: #000000;
+    font-weight: 500;
+  }
+  .banner-container .hero-banner__small {
+    display: flex;
+  }
+  .banner-container .hero-banner__small-item {
+    width: 100%;
+    position: relative;
+  }
+  .banner-container .hero-banner__small-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .banner-container .hero-banner__small-item .hero-banner__title {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -90%);
+    transform: translate(-50%, -50%);
+  }
+  .banner-container .hero-banner__small-item .hero-banner__title p {
+    font-size: 25px;
+  }
+  .banner-container .note {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: GothamHTF-Book;
+    font-weight: normal;
+    margin: 30px 0;
+  }
+  .footer__content-bottom .footer__menu-fast {
+    margin: 80px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
